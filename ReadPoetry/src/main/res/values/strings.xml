@@ -4,6 +4,8 @@
     <string name="app_name">ReadPoetry</string>
     <string name="app_name_cn">为你读诗</string>
 
+    <string name="current_version">current_version</string>
+
     <string name="default_des">世界很美，而你正好有空</string>
 
     <string name="title_section1">Section 1</string>
@@ -20,4 +22,12 @@
 
 
 
+
+    <string name="login_state">login_state</string>
+
+    <!-- 后台推送 -->
+    <string name="bt_notify_receive">bt_notify_receive</string>
+
+
+    <string name="image_content_description">图片资源</string>>
 </resources>

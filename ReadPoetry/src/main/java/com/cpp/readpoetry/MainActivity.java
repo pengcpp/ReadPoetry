@@ -22,16 +22,15 @@ import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
 import it.neokree.materialnavigationdrawer.util.Utils;
 
 /**
- * Created by neokree on 18/01/15.
+ * Created by Three. on 2015/3/5.
  */
 public class MainActivity extends MaterialNavigationDrawer {
-
-    private Toolbar toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        closeDrawer();
         getToolbar().setOnMenuItemClickListener(onMenuItemClick);
 
     }
@@ -42,7 +41,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         // set header background image
         setDrawerHeaderImage(R.drawable.ic_navigation_pic);
 
-        setUsername(getString(R.string.app_name_cn));
+//        setUsername(getString(R.string.app_name_cn));
         setUserEmail(getString(R.string.default_des));
 
         Point photoSize = DisplayUtil.getUserPhotoSize(getResources());
@@ -59,7 +58,9 @@ public class MainActivity extends MaterialNavigationDrawer {
         this.addSection(newSection("设置", R.drawable.ic_hotel_grey600_24dp, new FragmentButton()).setSectionColor(Color.parseColor("#FF9800")));
 
         // create bottom section
-        this.addBottomSection(newSection("Bottom Section", R.drawable.ic_settings_black_24dp, new Intent(this, Settings.class)));
+//        this.addBottomSection(newSection("Bottom Section", R.drawable.ic_settings_black_24dp, new Intent(this, Settings.class)));
+
+
     }
 
 
