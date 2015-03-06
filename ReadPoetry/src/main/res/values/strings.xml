@@ -7,19 +7,18 @@
     <string name="current_version">current_version</string>
 
     <string name="default_des">世界很美，而你正好有空</string>
+    <string name="default_des_two">不如归去笑红尘</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_section1">热门</string>
+    <string name="drawer_section2">反馈意见</string>
+    <string name="drawer_section3">提供素材</string>
+    <string name="drawer_section4">设置</string>
 
     <string name="action_example">Example action</string>
-    <string name="action_settings">Settings</string>
-    <string name="action_share">Share</string>
-    <string name="action_edit">Edit</string>
-
+    <string name="action_settings">设置</string>
+    <string name="action_share">分享</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_search">搜索</string>
 
 
 
@@ -29,5 +28,9 @@
     <string name="bt_notify_receive">bt_notify_receive</string>
 
 
-    <string name="image_content_description">图片资源</string>>
+    <string name="image_content_description">图片资源</string>
+
+
+
+    <string name="app_lily">遥远的故乡</string>
 </resources>

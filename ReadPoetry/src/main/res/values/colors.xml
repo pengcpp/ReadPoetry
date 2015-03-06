@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_button_bg_shadow">#14000000</color>
+    <color name="common_blue_button_bg_border">#0661b1</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#888888</color>
+
+</resources>

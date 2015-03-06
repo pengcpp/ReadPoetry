@@ -4,14 +4,14 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
 
-    <item android:id="@+id/action_edit"
-          android:title="@string/action_edit"
+    <item android:id="@+id/action_search"
+          android:title="@string/action_search"
           android:orderInCategory="80"
-          android:icon="@drawable/ab_edit"
+          android:icon="@drawable/ab_search"
           app:showAsAction="always" />
 
     <item android:id="@+id/action_share"
-          android:title="@string/action_edit"
+          android:title="@string/action_share"
           android:orderInCategory="90"
           android:icon="@drawable/ab_share"
           app:showAsAction="always" />

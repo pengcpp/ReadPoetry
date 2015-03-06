@@ -39,4 +39,5 @@ dependencies {
     compile 'com.android.support:support-v4:21.+'
 
     compile 'it.neokree:MaterialNavigationDrawer:1.3.2'
+    compile 'com.rengwuxian.materialedittext:library:1.8.3'
 }

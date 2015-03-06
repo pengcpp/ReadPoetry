@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 阴影那一层 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/common_button_bg_shadow"/>
+            <corners android:radius="19dp"/>
+        </shape>
+    </item>
+    
+    <!-- 内描边 -->
+    <!-- <item android:top="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/common_blue_button_bg_border"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item> -->
+    
+    <!-- 填充色 -->
+    <item android:top="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <corners android:radius="17dp"/>
+        </shape>
+    </item>
+
+</layer-list>
