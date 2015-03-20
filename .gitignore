@@ -32,3 +32,9 @@ proguard/
 /.idea/libraries
 .DS_Store
 /build
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
