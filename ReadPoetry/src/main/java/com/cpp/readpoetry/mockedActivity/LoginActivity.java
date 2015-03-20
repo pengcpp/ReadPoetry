@@ -1,7 +1,10 @@
 package com.cpp.readpoetry.mockedActivity;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -13,15 +16,22 @@ import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.cpp.readpoetry.R;
+import com.cpp.readpoetry.third.Blur;
+import com.cpp.readpoetry.util.DisplayUtil;
+import com.cpp.readpoetry.util.ImageUtil;
+
+import static com.cpp.readpoetry.util.Logger.*;
 
 /**
  * Created by Three. on 2015/3/6.
  */
 public class LoginActivity extends Activity implements View.OnClickListener {
 
+    private RelativeLayout backgroundLayout;
 
     private EditText userNameEdit;
     private EditText passWordEdit;
@@ -40,6 +50,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     private void initView() {
 
+//        Bitmap bmp = DisplayUtil.setAlpha(ImageUtil.readBitMap(this, R.drawable.login_background), 50);
+//        long b = System.currentTimeMillis();
+//        findViewById(R.id.background_layout).setBackgroundDrawable(new BitmapDrawable(getBlurBitmap()));
+//        logInfo("Time 2 ###" + (System.currentTimeMillis() - b));
+
         findViewById(R.id.ripple_button_back).setOnClickListener(this);
         findViewById(R.id.ripple_button_confirm).setOnClickListener(this);
 
@@ -47,7 +62,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         passWordEdit = (EditText) findViewById(R.id.password_edit);
 
         registerText = (TextView) findViewById(R.id.register_text);
-
 
         SpannableString spanString = new SpannableString("注册");
         spanString.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 2, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -82,5 +96,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 break;
             default:
         }
+    }
+
+    private Bitmap getBlurBitmap() {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 1;
+        Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.login_background, options);
+        return Blur.fastblur(LoginActivity.this, image, 20);
     }
 }

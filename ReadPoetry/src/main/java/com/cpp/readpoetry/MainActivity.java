@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.cpp.readpoetry.mockedActivity.LoginActivity;
 import com.cpp.readpoetry.mockedActivity.SettingActivity;
 import com.cpp.readpoetry.mockedFragments.FragmentButton;
+import com.cpp.readpoetry.mockedFragments.HotFragment;
 import com.cpp.readpoetry.util.DisplayUtil;
 import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
 import it.neokree.materialnavigationdrawer.elements.MaterialAccount;
@@ -65,9 +66,9 @@ public class MainActivity extends MaterialNavigationDrawer {
         // create sections no icon & with icon
 //        this.addSection(newSection("热门", new FragmentIndex()));
 //        this.addSection(newSection("反馈意见",new FragmentIndex()));
-        this.addSection(newSection(getString(R.string.drawer_section1), R.drawable.ic_track_changes_white, new FragmentButton()).setSectionColor(Color.parseColor("#F44336")));
-        this.addSection(newSection(getString(R.string.drawer_section2), R.drawable.ic_backup_white, new FragmentButton()).setSectionColor(Color.parseColor("#2196F3")));
-        this.addSection(newSection(getString(R.string.drawer_section3), R.drawable.ic_camera_alt, new FragmentButton()).setSectionColor(Color.parseColor("#5AB963")));
+        this.addSection(newSection(getString(R.string.drawer_section1), R.drawable.ic_track_changes_white, new HotFragment()).setSectionColor(Color.parseColor("#F44336")));
+        this.addSection(newSection(getString(R.string.drawer_section2), R.drawable.ic_backup_white, new HotFragment()).setSectionColor(Color.parseColor("#2196F3")));
+        this.addSection(newSection(getString(R.string.drawer_section3), R.drawable.ic_camera_alt, new HotFragment()).setSectionColor(Color.parseColor("#5AB963")));
 //        this.addSection(newSection(getString(R.string.drawer_section4), R.drawable.ic_settings_white, new FragmentButton()).setSectionColor(Color.parseColor("#FF9800")));
         this.addSection(newSection(getString(R.string.drawer_section4), R.drawable.ic_search_white, new Intent(MainActivity.this, SettingActivity.class)));
 
