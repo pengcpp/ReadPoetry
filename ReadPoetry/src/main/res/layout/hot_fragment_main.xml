@@ -8,13 +8,14 @@
     <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-        <ListView
-                android:id="@+id/listview"
+        <com.cpp.readpoetry.view.ImageListView
+                android:id="@+id/list_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-        </ListView>
+                android:layout_height="match_parent">
+        </com.cpp.readpoetry.view.ImageListView>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </RelativeLayout>

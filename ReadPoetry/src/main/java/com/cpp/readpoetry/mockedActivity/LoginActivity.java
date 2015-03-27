@@ -45,7 +45,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.login_layout);
 
         initView();
-
     }
 
     private void initView() {
