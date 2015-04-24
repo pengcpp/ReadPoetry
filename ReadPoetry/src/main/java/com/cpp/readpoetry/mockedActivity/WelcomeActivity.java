@@ -1,9 +1,10 @@
-package com.cpp.readpoetry;
+package com.cpp.readpoetry.mockedActivity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.config.AppConfig;
 import com.cpp.readpoetry.manager.AnimationManager;
 import com.cpp.readpoetry.manager.SettingManager;

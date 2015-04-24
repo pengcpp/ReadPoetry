@@ -1,7 +1,9 @@
 package com.cpp.readpoetry.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cpp.readpoetry.R;
+import com.cpp.readpoetry.util.DisplayUtil;
 
 /**
  * Created by Three. on 2015/3/26.
@@ -49,16 +52,24 @@ public class ImageListAdapter extends BaseAdapter {
             TextView textView = (TextView) convertView.findViewById(R.id.text);
             imageView.setScaleType(ImageView.ScaleType.MATRIX);
 
+            mContext.getResources().getDrawable(R.drawable.pic_1);
             // hardcode the background image
+            int srcId = 0;
             if (position % 4 == 0) {
-                imageView.setImageResource(R.drawable.pic_1);
+                srcId = R.drawable.pic_1;
             } else if (position % 4 == 1) {
-                imageView.setImageResource(R.drawable.pic_2);
+                srcId = R.drawable.pic_2;
             } else if (position % 4 == 2) {
-                imageView.setImageResource(R.drawable.pic_3);
+                srcId = R.drawable.pic_3;
             } else {
-                imageView.setImageResource(R.drawable.pic_4);
+                srcId = R.drawable.pic_4;
             }
+
+//            Bitmap bitmap = DisplayUtil.drawableToBitmap(mContext.getResources().getDrawable(srcId));
+//            int bmpWidth = bitmap.getWidth();
+//            int bmpHeight = bitmap.getHeight();
+
+            imageView.setImageResource(srcId);
 
             // since the image size is set to 400 x 300 we will hardcode the initial translation to the center for new item
             Matrix matrix = imageView.getImageMatrix();

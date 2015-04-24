@@ -15,4 +15,6 @@ public class GlobalConfig {
     public static long SHOW_SPLASH_TIME = 800;  //ms
 
 
+    public final static int REFRESH_OK = 100;
+    public final static int REFRESH_FAIL = 101;
 }

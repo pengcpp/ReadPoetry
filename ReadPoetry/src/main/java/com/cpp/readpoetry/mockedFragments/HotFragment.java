@@ -17,6 +17,8 @@ import com.cpp.readpoetry.adapter.ImageListAdapter;
 import com.cpp.readpoetry.view.ImageListView;
 import com.cpp.readpoetry.view.OnDetectScrollListener;
 
+import static com.cpp.readpoetry.config.GlobalConfig.*;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -35,16 +37,11 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
 
     private Matrix imageMatrix;
 
-    Timer timer;
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.hot_fragment_main, container, false);
 
         mContext = getActivity();
-        timer = new Timer();
 
         initView();
         return mView;
@@ -70,7 +67,12 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
      */
     @Override
     public void onRefresh() {
-        swipeLayout.setRefreshing(false);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                swipeLayout.setRefreshing(false);
+            }
+        }, 2000);
     }
 
     /**
@@ -110,9 +112,16 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         }
     }
 
-    Handler handler = new Handler(){
+    Handler handler = new Handler() {
         public void handleMessage(android.os.Message msg) {
-
+            switch (msg.what) {
+                case REFRESH_OK:
+                    swipeLayout.setRefreshing(false);
+                    break;
+                case REFRESH_FAIL:
+                    break;
+                default:
+            }
         }
     };
 }
