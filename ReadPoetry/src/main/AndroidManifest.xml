@@ -32,7 +32,7 @@
         </activity>
 
         <activity android:name=".mockedActivity.SettingActivity"
-                  android:theme="@style/AppTheme"/>
+                  android:theme="@style/ActivityAnimationIn"/>
         
         <activity android:name=".mockedActivity.Profile"/>
 

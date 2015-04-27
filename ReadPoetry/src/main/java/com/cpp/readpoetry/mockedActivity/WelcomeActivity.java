@@ -96,7 +96,9 @@ public class WelcomeActivity extends Activity {
                 Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
-                AnimationManager.overridePendingTransition(WelcomeActivity.this, false, AnimationManager.ActivityAnimationType.FADE_DEFAULT);
+                AnimationManager.overridePendingTransition(WelcomeActivity.this,
+                        AnimationManager.ActivityAction.ENTER_WITH_LAST_EXIT,
+                        AnimationManager.ActivityAnimationType.FADE_DEFAULT);
             }
         }
     };

@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import com.cpp.readpoetry.R;
+import com.cpp.readpoetry.manager.AnimationManager;
 
 
 /**
@@ -26,10 +27,25 @@ public class SettingActivity extends ActionBarActivity {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                onFinishActivity();
             }
         });
-
-
     }
+
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        onFinishActivity();
+    }
+
+
+    private void onFinishActivity() {
+        finish();
+        AnimationManager.overridePendingTransition(SettingActivity.this,
+                AnimationManager.ActivityAction.EXIT,
+                AnimationManager.ActivityAnimationType.TRANSLATE_EXIT_TO_LEFT);
+    }
+
+
 }

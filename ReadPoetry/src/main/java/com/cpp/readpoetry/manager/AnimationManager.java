@@ -3,6 +3,8 @@ package com.cpp.readpoetry.manager;
 import android.app.Activity;
 import com.cpp.readpoetry.R;
 
+import static com.cpp.readpoetry.util.Logger.logInfo;
+
 /**
  * Created by Three. on 2015/3/5.
  */
@@ -10,11 +12,23 @@ public class AnimationManager {
 
     private static final String TAG = "AnimationManager";
 
+    /**
+     * Activity Animation Type...
+     */
+    public static enum ActivityAction {
+        ENTER,
+        EXIT,
+        ENTER_WITH_LAST_EXIT
+    }
+
     public static enum ActivityAnimationType {
         SYSTEM_DEFAULT,
         FADE_DEFAULT,
-        TRANSLATE_FROM_LEFT,
-        TRANSLATE_FROM_RIGHT
+
+        TRANSLATE_ENTER_FROM_LEFT,
+        TRANSLATE_EXIT_TO_LEFT,
+        TRANSLATE_ENTER_FROM_RIGHT,
+        TRANSLATE_EXIT_TO_RIGHT
     }
 
     /**
@@ -24,59 +38,89 @@ public class AnimationManager {
      * specify an explicit transition animation to perform next. Use 0 for no animation.
      *
      * @param activity
-     * @param isEnter
+     * @param activityAction
      * @param animationType
      */
-    public static void overridePendingTransition(Activity activity, boolean isEnter, ActivityAnimationType animationType) {
+    public static void overridePendingTransition(Activity activity, ActivityAction activityAction, ActivityAnimationType animationType) {
+
+        logInfo(TAG, "activity: " + activity.getClass().getName() + " Action: " + activityAction.name() + " Type: " + animationType.name());
+
         if (activity != null) {
 
-
-            int[] animationResIds = getAnimationResId(isEnter, animationType);
+            int[] animationResIds = getAnimationResId(activityAction, animationType);
             if (animationResIds != null && animationResIds.length == 2) {
                 activity.overridePendingTransition(animationResIds[0], animationResIds[1]);
             }
         }
     }
 
-    private static int[] getAnimationResId(boolean isEnter, ActivityAnimationType animationType) {
+    private static int[] getAnimationResId(ActivityAction activityAction, ActivityAnimationType animationType) {
 
         int[] animationResIds = new int[2];
-        animationResIds[0] = -1;
-        animationResIds[1] = -1;
+        animationResIds[0] = 0;
+        animationResIds[1] = 0;
 
-        switch (animationType) {
-            case SYSTEM_DEFAULT:
 
-                break;
-            case FADE_DEFAULT:
-                if (isEnter) {
-                    animationResIds[0] = R.anim.fade_in;
-                    animationResIds[1] = R.anim.still_when_up;
-                } else {
-                    animationResIds[0] = R.anim.still_when_up;
-                    animationResIds[1] = R.anim.fade_out;
+        switch (activityAction) {
+            case ENTER: {
+                switch (animationType) {
+                    case SYSTEM_DEFAULT:
+                        animationResIds[0] = android.support.v7.appcompat.R.anim.abc_slide_in_bottom;
+                        break;
+                    case FADE_DEFAULT:
+                        animationResIds[0] = R.anim.fade_in;
+                        break;
+                    case TRANSLATE_ENTER_FROM_LEFT:
+                        animationResIds[0] = R.anim.activity_left_enter;
+                        break;
+                    case TRANSLATE_ENTER_FROM_RIGHT:
+                        animationResIds[0] = R.anim.activity_right_enter;
+                        break;
+                    default:
                 }
-                break;
-            case TRANSLATE_FROM_LEFT:
-                if (isEnter) {
-                    animationResIds[0] = R.anim.left_enter;
-                    animationResIds[1] = R.anim.still_when_up;
-                } else {
-                    animationResIds[0] = R.anim.still_when_up;
-                    animationResIds[1] = R.anim.left_exit;
+            }
+            break;
+            case EXIT: {
+                switch (animationType) {
+                    case SYSTEM_DEFAULT:
+                        animationResIds[1] = android.support.v7.appcompat.R.anim.abc_slide_out_bottom;
+                        break;
+                    case FADE_DEFAULT:
+                        animationResIds[1] = R.anim.fade_out;
+                        break;
+                    case TRANSLATE_EXIT_TO_LEFT:
+                        animationResIds[1] = R.anim.activity_left_exit;
+                        break;
+                    case TRANSLATE_EXIT_TO_RIGHT:
+                        animationResIds[1] = R.anim.activity_right_enter;
+                        break;
+                    default:
                 }
-                break;
-            case TRANSLATE_FROM_RIGHT:
-                if (isEnter) {
-                    animationResIds[0] = R.anim.right_enter;
-                    animationResIds[1] = R.anim.still_when_up;
-                } else {
-                    animationResIds[0] = R.anim.still_when_up;
-                    animationResIds[1] = R.anim.right_exit;
+            }
+            break;
+            // TODO
+            case ENTER_WITH_LAST_EXIT: {
+                switch (animationType) {
+                    case SYSTEM_DEFAULT:
+
+                        break;
+                    case FADE_DEFAULT:
+                        animationResIds[0] = R.anim.still_when_up;
+                        animationResIds[1] = R.anim.fade_out;
+                        break;
+                    case TRANSLATE_ENTER_FROM_LEFT:
+
+                        break;
+                    case TRANSLATE_ENTER_FROM_RIGHT:
+
+                        break;
+                    default:
                 }
-                break;
+            }
+            break;
             default:
         }
+
         return animationResIds;
     }
 }

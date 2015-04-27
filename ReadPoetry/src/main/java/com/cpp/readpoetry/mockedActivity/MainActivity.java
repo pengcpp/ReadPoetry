@@ -92,6 +92,8 @@ public class MainActivity extends MaterialNavigationDrawer {
                     break;
                 case R.id.action_settings:
                     msg += "Click setting";
+                    startActivity(new Intent(MainActivity.this, SettingActivity.class));
+                    overridePendingTransition(R.anim.activity_right_enter, 0);
                     break;
             }
 

@@ -21,4 +21,14 @@
         <item name="singleAccount">true</item><!-- Remove the change account button -->
     </style>
 
+    <style name="ActivityAnimationIn" parent="@style/AppTheme.Base">
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>-->
+    </style>
+
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/activity_right_enter</item>
+        <item name="android:windowExitAnimation">@anim/activity_left_exit</item>
+    </style>
+
 </resources>
