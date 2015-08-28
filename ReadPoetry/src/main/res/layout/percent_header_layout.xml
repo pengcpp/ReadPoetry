@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:id="@+id/container"
+            android:background="#df335b"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        <com.cpp.readpoetry.view.percentlayout.PercentRelativeLayout
+                android:id="@+id/percent_layout_parent"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="-100dp"
+                android:visibility="visible">
+
+            <View
+                    android:id="@+id/left"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="43%"/>
+
+            <View
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/left"
+                    app:layout_heightPercent="43%"/>
+
+            <View
+                    android:id="@+id/right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/top"
+                    android:layout_alignParentBottom="true"
+                    app:layout_widthPercent="43%"/>
+
+            <View
+                    android:id="@+id/bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/right"
+                    android:layout_toRightOf="@+id/left"
+                    app:layout_heightPercent="43%"/>
+
+            <com.cpp.readpoetry.view.percentlayout.PercentRelativeLayout
+                    android:id="@+id/percent_layout_child"
+                    android:layout_toLeftOf="@+id/right"
+                    android:layout_toRightOf="@+id/left"
+                    android:layout_below="@+id/top"
+                    android:layout_above="@+id/bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </com.cpp.readpoetry.view.percentlayout.PercentRelativeLayout>
+        </com.cpp.readpoetry.view.percentlayout.PercentRelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_marginBottom="40dp"
+            android:visibility="visible"
+            android:layout_height="300dp">
+
+        <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:maxWidth="250dp"
+                android:text="您的投资组合"
+                android:textSize="19dp"
+                android:textColor="@color/common_white"/>
+
+        <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title_text"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="风险度"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="@style/quora_result_rating_bar_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"/>
+
+            <TextView
+                    android:id="@+id/risk_result_text"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:minWidth="25dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/quora_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/icon_quora"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="推荐组合收益率"
+                android:textSize="15dp"
+                android:textColor="@color/common_white"/>
+
+
+        <com.cpp.readpoetry.view.CountTextView
+                android:id="@+id/rate_value_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="165dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="0%"
+                android:textSize="90dp"
+                android:textColor="@color/common_white"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -4,8 +4,8 @@
         xmlns:circleprogress="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/margin_5dp"
-        android:paddingRight="@dimen/margin_5dp">
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
 
     <com.cpp.readpoetry.view.CircleProgress
             android:id="@+id/progress"

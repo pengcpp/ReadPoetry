@@ -21,7 +21,6 @@
     <string name="action_search">搜索</string>
 
 
-
     <string name="login_state">login_state</string>
 
     <!-- 后台推送 -->
@@ -31,6 +30,10 @@
     <string name="image_content_description">图片资源</string>
 
 
+    <string name="crash_notice">很抱歉，程序出现异常，即将退出</string>
+
 
     <string name="app_lily">遥远的故乡</string>
+
+    <string name="image_des">IMAGE的描述</string>
 </resources>

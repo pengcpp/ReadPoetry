@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <!-- 通用颜色 -->
+    <color name="common_black">#222222</color>
+    <color name="common_black_text">#000000</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_gray">#adadad</color>
+    <color name="common_gray_edit">#bfbfbf</color>
+    <color name="common_orange">#fe8b04</color>
+    <color name="common_agree">#676767</color>
+    <color name="common_transparent">@android:color/transparent</color>
+
     <color name="common_button_bg_shadow">#14000000</color>
     <color name="common_blue_button_bg_border">#0661b1</color>
 
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#888888</color>
+    <color name="login_orange">#fc491e</color>
 
     <color name="material_orange">#FF9800</color>
     <color name="material_red">#F44336</color>
     <color name="material_cyan">#009688</color>
     <color name="material_blue">#03A9F4</color>
 
+
+    <!-- 透明灰 -->
+    <color name="gray_transparent_c">#C0000000</color>
+    <color name="gray_transparent_b">#B0000000</color>
+    <color name="gray_transparent_a">#A0000000</color>
+    <color name="gray_transparent_9">#90000000</color>
+    <color name="gray_transparent_8">#80000000</color>
+    <color name="gray_transparent_7">#70000000</color>
+    <color name="gray_transparent_6">#60000000</color>
+    <color name="gray_transparent_5">#50000000</color>
+    <color name="gray_transparent_4">#40000000</color>
+    <color name="gray_transparent_3">#30000000</color>
 </resources>

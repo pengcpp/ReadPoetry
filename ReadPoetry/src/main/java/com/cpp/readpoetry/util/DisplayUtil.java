@@ -1,8 +1,10 @@
 package com.cpp.readpoetry.util;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.*;
 import android.graphics.drawable.Drawable;
+import android.util.DisplayMetrics;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -13,6 +15,20 @@ import java.io.ByteArrayOutputStream;
  */
 public class DisplayUtil {
 
+    public static int px2sp(Context context, float pxValue) {
+        final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
+    }
+
+    public static int dp2px(Context context, int dp) {
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        return (int) ((dp * displayMetrics.density) + 0.5);
+    }
+
+    public static int px2dp(Context context, float pxValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (pxValue / scale + 0.5f);
+    }
 
     /**
      *
@@ -23,8 +39,6 @@ public class DisplayUtil {
         int size = (int) (64.0F * res.getDisplayMetrics().density);
         return new Point(size, size);
     }
-
-
 
     /**
      * 图片透明度处理
@@ -80,5 +94,6 @@ public class DisplayUtil {
         Bitmap bitmap = BitmapFactory.decodeStream(isBm, null, null);//把ByteArrayInputStream数据生成图片
         return bitmap;
     }
+
 
 }

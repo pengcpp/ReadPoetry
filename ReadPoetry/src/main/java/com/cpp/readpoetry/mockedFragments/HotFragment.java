@@ -93,7 +93,7 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         for (int i = 0; i < (last - first); i++) {
             ImageView imageView = ((ImageListAdapter.ViewHolder) imageListView.getChildAt(i).getTag()).imageView;
             imageMatrix = imageView.getImageMatrix();
-            imageMatrix.postTranslate(0, -0.5f);
+            imageMatrix.postTranslate(0.5f, 0);
             imageView.setImageMatrix(imageMatrix);
             imageView.invalidate();
         }
@@ -106,7 +106,7 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         for (int i = 0; i < (last - first); i++) {
             ImageView imageView = ((ImageListAdapter.ViewHolder) imageListView.getChildAt(i).getTag()).imageView;
             imageMatrix = imageView.getImageMatrix();
-            imageMatrix.postTranslate(0, 0.5f);
+            imageMatrix.postTranslate(0.5f, 0);
             imageView.setImageMatrix(imageMatrix);
             imageView.invalidate();
         }

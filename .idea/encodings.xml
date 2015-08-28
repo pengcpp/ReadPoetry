@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/PortfolioData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/QuoraData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/TestData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedActivity/TerminalActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedActivity/base/BaseFragmentActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedFragments/base/BaseFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonArray.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonArrayParser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonBool.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonBytes.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonNull.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonNum.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonObject.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonParser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonString.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonValue.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/ActivityStack.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/AppInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/AppMethods.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/CrashHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/CrashInfoInterface.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/util/LogUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/CircleTextView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/CircleView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/gridpassword/CustomPasswordTransformationMethod.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/gridpassword/GridPasswordInterface.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/gridpassword/GridPasswordType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/gridpassword/GridPasswordView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/gridpassword/ImeDelBugFixedEditText.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentFrameLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentHeaderView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentLayoutHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentLinearLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentRelativeLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_quora.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_back.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_front.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable/quora_result_rating_bar.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_wrapper_notitle.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_divided_line.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_textview.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_view.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/percent_header_layout.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/values/ids.xml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
 </project>

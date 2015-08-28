@@ -5,4 +5,42 @@
         <attr name="color2" format="reference|color"/>
         <attr name="color3" format="reference|color"/>
     </declare-styleable>
+
+    <!-- PercentLayout -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+        <attr name="layout_textSizePercent" format="string"/>
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+    </declare-styleable>
+
+    <!-- GridPasswordView -->
+    <declare-styleable name="gridPasswordView">
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension"/>
+
+        <attr name="lineColor" format="color"/>
+        <attr name="gridColor" format="color"/>
+        <attr name="lineWidth" format="dimension"/>
+
+        <attr name="passwordLength" format="integer"/>
+        <attr name="passwordTransformation" format="string"/>
+
+        <attr name="passwordType" format="enum">
+            <enum name="numberPassword" value="0"/>
+            <enum name="textPassword" value="1"/>
+            <enum name="textVisiblePassword" value="2"/>
+            <enum name="textWebPassword" value="3"/>
+        </attr>
+    </declare-styleable>
 </resources>
