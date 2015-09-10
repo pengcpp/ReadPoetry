@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.cpp.readpoetry.R;
+import com.cpp.readpoetry.activity.TerminalActivity;
 import com.cpp.readpoetry.data.FuncItemData;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
 
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 乱七八糟的功能
+ * 乱七八糟的Function
  */
 public class FunctionFragment extends BaseFragment {
 
@@ -48,20 +49,33 @@ public class FunctionFragment extends BaseFragment {
         itemDataList = new ArrayList<>();
         FuncItemData data;
 
-        //
+        // PercentLayoutFragment
         data = new FuncItemData();
-        data.title = "什么鬼";
+        data.title = "PercentLayout";
         data.showHeaderView = true;
+        data.showDividingLine = true;
+        data.itemType = 1;
+        data.onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TerminalActivity.showFragment(context, PercentLayoutFragment.class, null);
+            }
+        };
+        itemDataList.add(data);
+
+        // CarouselFragment
+        data = new FuncItemData();
+        data.title = "Carousel";
+        data.showHeaderView = false;
         data.showDividingLine = false;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                TerminalActivity.showFragment(context, CarouselFragment.class, null);
             }
         };
         itemDataList.add(data);
-
 
     }
 

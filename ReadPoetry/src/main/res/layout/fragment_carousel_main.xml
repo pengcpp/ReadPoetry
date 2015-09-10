@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.cpp.readpoetry.view.TopActionBar
+            android:id="@+id/topbar"
+            app:topbarTitle="Carousel"
+            app:topbarIsLeftShow="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:id="@+id/middle_layout"
+            android:layout_below="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white">
+
+        <com.cpp.readpoetry.view.PieChartWithCircle
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:visibility="visible"/>
+
+        <com.cpp.readpoetry.view.carousel.Carousel
+                android:id="@+id/carousel"
+                android:layout_marginTop="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:animationDuration="200"
+                android:gravity="center_vertical"
+                android:background="@color/common_transparent"
+                android:visibility="visible"/>
+
+    </RelativeLayout>
+</RelativeLayout>

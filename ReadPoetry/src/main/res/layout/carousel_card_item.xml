@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="140dp"
+              android:layout_height="160dp"
+              android:divider="@null"
+              android:background="@color/common_white">
+    <!-- @drawable/carousel_card_selector -->
+    <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/common_orange">
+
+        <TextView
+                android:id="@+id/fund_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广发天天利货币"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/common_white"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        <TextView
+                android:id="@+id/fund_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="货币"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/common_gray_bg"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/carousel_card_selector">
+
+        <TextView
+                android:id="@+id/rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="比例"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/common_gray_edit"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        <TextView
+                android:id="@+id/percent_text"
+                android:layout_below="@+id/rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/common_black_text"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"/>
+
+
+        <TextView
+                android:id="@+id/tz"
+                android:layout_below="@+id/percent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资金额"
+                android:textSize="15dp"
+                android:includeFontPadding="false"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/common_gray_edit"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        <TextView
+                android:id="@+id/fund_count_text"
+                android:layout_below="@+id/tz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:textSize="18dp"
+                android:text=""
+                android:textColor="@color/common_orange"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

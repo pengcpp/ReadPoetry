@@ -6,8 +6,10 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 
 public class Methods {
 
@@ -94,7 +96,7 @@ public class Methods {
      * @param show
      */
     public static void showToast(final int resId, final boolean lengthLong, boolean show) {
-        if (show == false) {
+        if (!show) {
             return;
         }
         Runnable update = new Runnable() {
@@ -115,11 +117,34 @@ public class Methods {
     public static String formatCrashlogName() {
         long timestamp = System.currentTimeMillis();
         SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyyMMdd-HHmmss");
+                "yyyyMMdd-HHmmss", Locale.getDefault());
         String timeStr = formatter.format(timestamp);
         // crash_12345_20140702-173537
-        String logName = "crash_" + timeStr + "_readpoety.txt";
-        return logName;
+        return "crash_" + timeStr + "_readpoety.txt";
+    }
+
+
+    /*
+     * double数字转换成0.00的形式
+     */
+    public static String doubleFormat(double count) {
+        if (count >= 0 && count < 0.01)
+            return "0.00";
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        return decimalFormat.format(count);
+    }
+
+    /**
+     * 货币数量千分位分隔符添加
+     *
+     * @param count 货币数量
+     * @return String
+     */
+    public static String currencyFormat(double count) {
+        if (count >= 0 && count < 0.001)
+            return "0.00";
+        DecimalFormat decimalFormat = new DecimalFormat("#,###,###,##0.00");
+        return decimalFormat.format(count);
     }
 
 }

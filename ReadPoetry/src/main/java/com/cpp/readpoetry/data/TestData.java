@@ -38,12 +38,49 @@ public class TestData {
             30, 28, 22, 15, 5
     };
 
+    public static final String[] MAIN_TAB_FUND_TYPE = new String[]{
+            "货币", "混合", "指数", "混合", "指数"
+    };
+
+    public static final String[] MAIN_TAB_FUND_NAME = new String[]{
+            "嘉实货币", "招商大盘蓝筹股票", "富国新兴产业股票", "兴全轻资产", "富国低碳环保混合"
+    };
+
     public static final int[] MAIN_TAB_COMBINATION_COLORS = new int[]{
             Color.parseColor("#df335b"), Color.parseColor("#fb8541"), Color.parseColor("#f8a64f"),
             Color.parseColor("#ffd200"),
             Color.parseColor("#c7db57"), Color.parseColor("#3ed8ff"), Color.parseColor("#00a3f8"),
             Color.parseColor("#7569e2"), Color.parseColor("#854ea8"),
     };
+
+    public static ArrayList<CarouselItemData> initCarouselList() {
+        ArrayList<CarouselItemData> carouselList = new ArrayList<>();
+
+        for (int i = 0; i < MAIN_TAB_FUND_PROPORTION.length; i++) {
+            CarouselItemData data = new CarouselItemData();
+            data.bgColor = MAIN_TAB_FUND_COLORS[i];
+            data.fundName = MAIN_TAB_FUND_NAME[i];
+            data.percent = MAIN_TAB_FUND_PROPORTION[i];
+            data.fundMoney = data.percent * 100000;
+            data.type = MAIN_TAB_FUND_TYPE[i];
+            carouselList.add(data);
+        }
+        return carouselList;
+    }
+
+    public static ArrayList<BasePieChartData> initPieChartList() {
+        ArrayList<BasePieChartData> pieChartList = new ArrayList<>();
+
+        for (int i = 0; i < MAIN_TAB_FUND_PROPORTION.length; i++) {
+            BasePieChartData data = new BasePieChartData();
+            data.itemColor = MAIN_TAB_FUND_COLORS[i];
+            data.itemPercent = MAIN_TAB_FUND_PROPORTION[i];
+            data.itemName = MAIN_TAB_FUND_NAME[i];
+            pieChartList.add(data);
+        }
+
+        return pieChartList;
+    }
 
 
     public static ArrayList<QuoraData> initQuoraList() {

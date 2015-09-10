@@ -19,25 +19,23 @@ import java.math.BigDecimal;
 
 /**
  * Percent Header with anim...
- * <p/>
- * Created by Three. on 2015/7/14.
  */
 public class PercentHeaderView extends RelativeLayout {
 
-    private final String TAG = "PercentHeaderView";
+    final String TAG = "PercentHeaderView";
 
     protected int layoutResId = R.layout.percent_header_layout;
 
     private Context context;
-    private LayoutInflater inflater;
+    LayoutInflater inflater;
 
     private ImageView mQuoraImage;
     private RatingBar mRatingBar;
     private TextView mRiskText;
     private CountTextView mRateText;
 
-    private PercentRelativeLayout parentPercentLayout;
-    private PercentRelativeLayout childPercentLayout;
+    PercentRelativeLayout parentPercentLayout;
+    PercentRelativeLayout childPercentLayout;
 
     private View left;
     private View top;

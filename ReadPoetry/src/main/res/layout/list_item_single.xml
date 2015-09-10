@@ -60,7 +60,7 @@
     <View
             android:id="@+id/item_division_line"
             android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="1px"
             android:background="@color/gray_transparent_4"/>
 

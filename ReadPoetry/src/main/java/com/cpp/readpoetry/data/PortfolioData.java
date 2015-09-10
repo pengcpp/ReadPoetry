@@ -40,7 +40,9 @@ public class PortfolioData {
         for (int i = 0; i < TestData.MAIN_TAB_FUND_PROPORTION.length; i++) {
             FundItemData itemData = new FundItemData();
             itemData.proportion = TestData.MAIN_TAB_FUND_PROPORTION[i];
+            itemData.investType = TestData.MAIN_TAB_FUND_TYPE[i];
             itemData.color = TestData.MAIN_TAB_COMBINATION_COLORS[i];
+            itemData.fundName = TestData.MAIN_TAB_FUND_NAME[i];
             fundList.add(itemData);
         }
     }
@@ -61,6 +63,8 @@ public class PortfolioData {
             for (int i = 0; i < tmpList.size(); i++) {
                 FundItemData itemData = new FundItemData((JsonObject) tmpList.get(i));
                 itemData.color = TestData.MAIN_TAB_FUND_COLORS[i];
+                itemData.fundName = TestData.MAIN_TAB_FUND_NAME[i];
+                itemData.proportion = TestData.MAIN_TAB_FUND_PROPORTION[i];
                 fundList.add(itemData);
             }
         }
