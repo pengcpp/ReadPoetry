@@ -26,6 +26,23 @@ public class PortfolioData {
     public double minInvestAmount;//	最小投资金额
 
     public PortfolioData() {
+
+        name = "组合名称";
+        comment = "基金简介...";
+        isInvest = true;
+        isRisk = true;
+        riskScore = 8;
+        canRestart = true;
+        minInvestAmount = 1000;
+        incomeRateOfYear = 47f;
+        historyIncome = 78f;
+
+        for (int i = 0; i < TestData.MAIN_TAB_FUND_PROPORTION.length; i++) {
+            FundItemData itemData = new FundItemData();
+            itemData.proportion = TestData.MAIN_TAB_FUND_PROPORTION[i];
+            itemData.color = TestData.MAIN_TAB_COMBINATION_COLORS[i];
+            fundList.add(itemData);
+        }
     }
 
     public PortfolioData(JsonObject riskScoreData) {
@@ -47,7 +64,6 @@ public class PortfolioData {
                 fundList.add(itemData);
             }
         }
-
     }
 
     public class FundItemData {
@@ -58,6 +74,9 @@ public class PortfolioData {
         public long fundId;
         public String code;
         public int color;
+
+        public FundItemData() {
+        }
 
         public FundItemData(JsonObject itemObject) {
             investType = itemObject.getString("investType");

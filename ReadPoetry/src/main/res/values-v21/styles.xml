@@ -5,4 +5,17 @@
         <!--Navigation bar color-->
         <item name="android:navigationBarColor">@color/accent_material_light</item>
     </style>
+
+    <style name="NoTitleActivityStyle" parent="@style/AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="@android:windowAnimationStyle">@style/WindowAnimation.Default</item>
+    </style>
+
+    <style name="WindowAnimation.Default" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_switch_style01_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_switch_style01_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_switch_style01_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_switch_style01_close_exit</item>
+    </style>
 </resources>

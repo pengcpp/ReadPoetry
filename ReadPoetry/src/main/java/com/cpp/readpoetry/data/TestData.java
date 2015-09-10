@@ -34,8 +34,13 @@ public class TestData {
             Color.parseColor("#7569e2"), Color.parseColor("#854ea8"),
     };
 
+    public static final float[] MAIN_TAB_FUND_PROPORTION = new float[]{
+            30, 28, 22, 15, 5
+    };
+
     public static final int[] MAIN_TAB_COMBINATION_COLORS = new int[]{
-            Color.parseColor("#fb8541"), Color.parseColor("#f8a64f"), Color.parseColor("#ffd200"),
+            Color.parseColor("#df335b"), Color.parseColor("#fb8541"), Color.parseColor("#f8a64f"),
+            Color.parseColor("#ffd200"),
             Color.parseColor("#c7db57"), Color.parseColor("#3ed8ff"), Color.parseColor("#00a3f8"),
             Color.parseColor("#7569e2"), Color.parseColor("#854ea8"),
     };

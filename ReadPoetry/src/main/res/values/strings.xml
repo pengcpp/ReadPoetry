@@ -12,7 +12,7 @@
     <string name="drawer_section1">热门</string>
     <string name="drawer_section2">反馈意见</string>
     <string name="drawer_section3">提供素材</string>
-    <string name="drawer_section4">设置</string>
+    <string name="drawer_section4">功能</string>
 
     <string name="action_example">Example action</string>
     <string name="action_settings">设置</string>
@@ -36,4 +36,22 @@
     <string name="app_lily">遥远的故乡</string>
 
     <string name="image_des">IMAGE的描述</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh_last_update_time">上次刷新：</string>
+    <string name="pull_to_refresh_format_1" formatted="false">%d分%d秒前</string>
+    <string name="pull_to_refresh_format_2">%d分钟前</string>
+    <string name="pull_to_refresh_format_3">%d秒前</string>
+    <string name="pull_to_refresh_format_4">刚刚</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_loading_finish">加载完成</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="cube_ptr_seconds_ago">&#160;秒前</string>
+    <string name="cube_ptr_minutes_ago">&#160;分钟前</string>
+    <string name="cube_ptr_hours_ago">&#160;小时前</string>
+
 </resources>

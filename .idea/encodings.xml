@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/TerminalActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/base/BaseFragmentActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/PortfolioData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/QuoraData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/TestData.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedActivity/TerminalActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedActivity/base/BaseFragmentActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/mockedFragments/base/BaseFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/fragment/base/BaseFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonArray.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonArrayParser.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/third/json/JsonBool.java" charset="UTF-8" />
@@ -35,6 +35,8 @@
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentLayoutHelper.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentLinearLayout.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentRelativeLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/PtrClassicDefaultHeader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/PtrClassicFrameLayout.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_quora.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_back.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_front.png" charset="UTF-8" />

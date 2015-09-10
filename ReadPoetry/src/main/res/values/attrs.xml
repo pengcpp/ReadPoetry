@@ -6,6 +6,22 @@
         <attr name="color3" format="reference|color"/>
     </declare-styleable>
 
+    <!-- TopActionBar -->
+    <declare-styleable name="TopActionBar">
+        <attr name="topbarTitle" format="string"/>
+        <attr name="topbarIsLeftShow" format="boolean"/>
+        <attr name="topbarLeftImgRes" format="reference"/>
+        <attr name="topbarLeftText" format="string"/>
+        <attr name="topbarIsRightShow" format="boolean"/>
+        <attr name="topbarRightImgRes" format="reference"/>
+        <attr name="topbarRightText" format="string"/>
+        <attr name="topbarRightClassName" format="string"/>
+        <attr name="topbarIsRight2Show" format="boolean"/>
+        <attr name="topbarRight2ImgRes" format="reference"/>
+        <attr name="topbarRight2Text" format="string"/>
+        <attr name="topbarRight2ClassName" format="string"/>
+    </declare-styleable>
+
     <!-- PercentLayout -->
     <declare-styleable name="PercentLayout_Layout">
         <attr name="layout_widthPercent" format="string"/>
@@ -42,5 +58,9 @@
             <enum name="textVisiblePassword" value="2"/>
             <enum name="textWebPassword" value="3"/>
         </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
     </declare-styleable>
 </resources>

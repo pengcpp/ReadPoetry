@@ -3,7 +3,10 @@ package com.cpp.readpoetry.util;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.text.TextUtils;
+import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class Methods {
@@ -35,4 +38,88 @@ public class Methods {
         }
         return false;
     }
+
+
+    /**
+     * 显示Toast
+     *
+     * @param text
+     */
+    public static void showToast(final CharSequence text) {
+        showToast(text, false, true);
+    }
+
+    /**
+     * @param text
+     * @param lengthLong 是否较长时间显示
+     */
+    public static void showToast(final CharSequence text, final boolean lengthLong) {
+        if (text != null) {
+            showToast(text, lengthLong, true);
+        }
+    }
+
+    public static void showToast(final CharSequence text, final boolean lengthLong, boolean show) {
+        if (!show) {
+            return;
+        }
+        Runnable update = new Runnable() {
+            public void run() {
+                AppInfo.getGlobalToast().setText(text);
+                AppInfo.getGlobalToast().setDuration(lengthLong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
+                AppInfo.getGlobalToast().show();
+            }
+        };
+        AppInfo.getUIHandler().post(update);
+    }
+
+    /**
+     * 直接应用资源Id显示Toast
+     *
+     * @param resId
+     */
+    public static void showToast(final int resId) {
+        showToast(resId, false, true);
+    }
+
+    public static void showToast(int resId, boolean lengthLong) {
+        String text = AppInfo.getAppContext().getString(resId);
+        if (TextUtils.isEmpty(text))
+            showToast(text, lengthLong);
+    }
+
+    /**
+     * @param resId
+     * @param lengthLong
+     * @param show
+     */
+    public static void showToast(final int resId, final boolean lengthLong, boolean show) {
+        if (show == false) {
+            return;
+        }
+        Runnable update = new Runnable() {
+            public void run() {
+                AppInfo.getGlobalToast().setText(resId);
+                AppInfo.getGlobalToast().setDuration(lengthLong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
+                AppInfo.getGlobalToast().show();
+            }
+        };
+        AppInfo.getUIHandler().post(update);
+    }
+
+    /**
+     * 格式化crash log名称
+     *
+     * @return
+     */
+    public static String formatCrashlogName() {
+        long timestamp = System.currentTimeMillis();
+        SimpleDateFormat formatter = new SimpleDateFormat(
+                "yyyyMMdd-HHmmss");
+        String timeStr = formatter.format(timestamp);
+        // crash_12345_20140702-173537
+        String logName = "crash_" + timeStr + "_readpoety.txt";
+        return logName;
+    }
+
 }

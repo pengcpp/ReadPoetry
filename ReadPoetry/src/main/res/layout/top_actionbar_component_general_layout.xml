@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/topbar_message_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/common_orange_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="visible"/>
+
+    <ImageButton
+            android:id="@+id/topbar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+</RelativeLayout>

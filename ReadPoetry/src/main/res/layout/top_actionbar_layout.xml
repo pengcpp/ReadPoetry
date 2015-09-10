@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+    <ViewStub
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:inflatedId="@+id/left_layout"
+            android:layout_marginLeft="10dp"
+            android:layout="@layout/top_actionbar_component_general_layout">
+    </ViewStub>
+
+    <RelativeLayout
+            android:id="@+id/middle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+        <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/common_black"
+                android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/topbar_side_icon_lay"
+            android:layout_toRightOf="@+id/middle_layout"
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/topbar_side_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/topbar_title_click_icon"
+                android:contentDescription="@string/image_des"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ViewStub
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:inflatedId="@+id/right_layout"
+            android:layout="@layout/top_actionbar_component_general_layout"/>
+
+    <ViewStub
+            android:id="@+id/right_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/right_layout"
+            android:inflatedId="@+id/right_layout2"
+            android:layout="@layout/top_actionbar_component_general_layout"/>
+
+    <View
+		android:id="@+id/action_bar_seperator"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_alignParentBottom="true"
+		android:background="@color/common_black"/>
+
+</RelativeLayout>

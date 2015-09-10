@@ -5,7 +5,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
+import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.data.PortfolioData;
 import com.cpp.readpoetry.util.LogUtils;
@@ -31,7 +34,7 @@ public class PercentHeaderView extends RelativeLayout {
     private ImageView mQuoraImage;
     private RatingBar mRatingBar;
     private TextView mRiskText;
-//    private CountTextView mRateText;
+    private CountTextView mRateText;
 
     private PercentRelativeLayout parentPercentLayout;
     private PercentRelativeLayout childPercentLayout;
@@ -70,7 +73,7 @@ public class PercentHeaderView extends RelativeLayout {
         mRatingBar = (RatingBar) findViewById(R.id.rating_bar);
         mQuoraImage = (ImageView) findViewById(R.id.quora_image);
         mRiskText = (TextView) findViewById(R.id.risk_result_text);
-//        mRateText = (CountTextView) findViewById(R.id.rate_value_text);
+        mRateText = (CountTextView) findViewById(R.id.rate_value_text);
 
         parentPercentLayout = (PercentRelativeLayout) findViewById(R.id.percent_layout_parent);
         ObjectAnimator.ofFloat(parentPercentLayout, "rotation", 0f, 30f).setDuration(10).start();
@@ -89,8 +92,8 @@ public class PercentHeaderView extends RelativeLayout {
             return;
         mRatingBar.setRating((float) portfolioData.riskScore / 2);
         mRiskText.setText(Double.toString(portfolioData.riskScore));
-//        mRateText.setShowType(CountTextView.PERCENT_TYPE);
-//        mRateText.showNumberWithAnimation(new BigDecimal(portfolioData.incomeRateOfYear).setScale(0, BigDecimal.ROUND_HALF_UP).intValue());
+        mRateText.setShowType(CountTextView.PERCENT_TYPE);
+        mRateText.showNumberWithAnimation(new BigDecimal(portfolioData.incomeRateOfYear).setScale(0, BigDecimal.ROUND_HALF_UP).intValue());
         reSizePercentLayout();
     }
 

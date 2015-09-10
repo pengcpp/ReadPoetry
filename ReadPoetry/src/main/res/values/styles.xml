@@ -1,5 +1,12 @@
 <resources>
 
+
+    <style name="NoTitleActivityStyle" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="@android:windowAnimationStyle">@style/WindowAnimation.Default</item>
+    </style>
+
     <!-- Base application theme. -->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -32,6 +39,13 @@
         <item name="android:windowExitAnimation">@anim/activity_left_exit</item>
     </style>
 
+    <!-- 控制系统Activity跳转的默认动画 -->
+    <style name="WindowAnimation.Default" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_switch_style01_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_switch_style01_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_switch_style01_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_switch_style01_close_exit</item>
+    </style>
 
     <!-- View -->
 
@@ -62,6 +76,49 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_marginTop">1dp</item>
         <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <!-- Refresh Layout -->
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference"/>
+        <attr name="ptr_content" format="reference"/>
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float"/>
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float"/>
+        <attr name="ptr_duration_to_close" format="integer"/>
+        <attr name="ptr_duration_to_close_header" format="integer"/>
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean"/>
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Pager Indicator -->
+    <style name="StyledIndicators" parent="AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/tab_color_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+        <item name="android:typeface">monospace</item>
     </style>
 
 </resources>
