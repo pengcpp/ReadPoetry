@@ -12,7 +12,7 @@
     <string name="drawer_section1">热门</string>
     <string name="drawer_section2">反馈意见</string>
     <string name="drawer_section3">提供素材</string>
-    <string name="drawer_section4">功能</string>
+    <string name="drawer_section4">各种控件</string>
 
     <string name="action_example">Example action</string>
     <string name="action_settings">设置</string>
@@ -29,7 +29,7 @@
 
     <string name="image_content_description">图片资源</string>
 
-
+    <string name="double_click_quit">再按一次退出</string>
     <string name="crash_notice">很抱歉，程序出现异常，即将退出</string>
 
 

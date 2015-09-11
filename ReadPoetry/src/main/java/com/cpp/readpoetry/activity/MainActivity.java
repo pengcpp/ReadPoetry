@@ -7,6 +7,7 @@ import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,9 +24,11 @@ import it.neokree.materialnavigationdrawer.elements.listeners.MaterialAccountLis
 import it.neokree.materialnavigationdrawer.util.Utils;
 
 /**
- * Created by Three. on 2015/3/5.
+ * 主容器
  */
 public class MainActivity extends MaterialNavigationDrawer {
+
+    private boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,4 +114,24 @@ public class MainActivity extends MaterialNavigationDrawer {
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+
+        if (doubleBackToExitPressedOnce
+                || this.getSupportFragmentManager().getBackStackEntryCount() != 0) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(MainActivity.this, getString(R.string.double_click_quit), Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce = false;
+            }
+
+        }, 2000);
+    }
 }

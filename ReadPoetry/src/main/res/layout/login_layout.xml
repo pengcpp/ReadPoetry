@@ -56,7 +56,7 @@
                         android:layout_marginLeft="20dp"
                         />
 
-                <com.rengwuxian.materialedittext.MaterialEditText
+                <EditText
                         android:id="@+id/usr_edit"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -64,10 +64,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
                         android:text=""
-                        android:textSize="17dp"
-                        app:baseColor="@android:color/black"
-                        app:primaryColor="?colorAccent"
-                        app:singleLineEllipsis="true"/>
+                        android:textSize="17dp"/>
             </LinearLayout>
 
 
@@ -87,7 +84,7 @@
                         android:layout_marginLeft="20dp"
                         />
 
-                <com.rengwuxian.materialedittext.MaterialEditText
+                <EditText
                         android:id="@+id/password_edit"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -95,10 +92,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
                         android:inputType="textPassword"
-                        android:textSize="17dp"
-                        app:baseColor="@android:color/black"
-                        app:primaryColor="?colorAccent"
-                        app:singleLineEllipsis="true"/>
+                        android:textSize="17dp"/>
             </LinearLayout>
 
             <TextView
@@ -109,8 +103,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:textSize="14dp"
-                    android:text="注册"/>
+                    android:textSize="14sp"
+                    android:text=""/>
 
             <LinearLayout
                     android:layout_below="@+id/register_text"
@@ -124,7 +118,8 @@
                         android:layout_width="90dp"
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/common_btn_big_radius_default"
+                        android:background="@drawable/gray_radius_button_normal"
+                        app:mrl_rippleRoundedCorners="13dp"
                         app:mrl_rippleOverlay="true"
                         app:mrl_rippleColor="#585858"
                         app:mrl_rippleDimension="10dp"
@@ -137,9 +132,10 @@
                     <Button
                             android:id="@+id/ripple_button_back"
                             android:layout_width="match_parent"
-                            android:background="@drawable/common_btn_big_radius_default"
+                            android:background="@drawable/gray_radius_button_normal"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textColor="@color/common_gray_text_color"
                             android:text="返回"/>
 
                 </com.balysv.materialripple.MaterialRippleLayout>
@@ -148,7 +144,8 @@
                         android:layout_width="90dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="15dp"
-                        android:background="@drawable/common_btn_big_radius_default"
+                        android:background="@drawable/gray_radius_button_normal"
+                        app:mrl_rippleRoundedCorners="13dp"
                         app:mrl_rippleOverlay="true"
                         app:mrl_rippleColor="#585858"
                         app:mrl_rippleDimension="10dp"
@@ -161,9 +158,10 @@
                     <Button
                             android:id="@+id/ripple_button_confirm"
                             android:layout_width="match_parent"
-                            android:background="@drawable/common_btn_big_radius_default"
+                            android:background="@drawable/gray_radius_button_normal"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:textColor="@color/common_gray_text_color"
                             android:text="确认"/>
 
                 </com.balysv.materialripple.MaterialRippleLayout>
