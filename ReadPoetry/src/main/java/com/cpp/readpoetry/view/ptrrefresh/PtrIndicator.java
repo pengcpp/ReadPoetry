@@ -7,6 +7,7 @@ public class PtrIndicator {
     public final static int POS_START = 0;
     protected int mOffsetToRefresh = 0;
     private PointF mPtLastMove = new PointF();
+
     private float mOffsetX;
     private float mOffsetY;
     private int mCurrentPos = 0;
@@ -187,8 +188,7 @@ public class PtrIndicator {
     }
 
     public float getCurrentPercent() {
-        final float currentPercent = mHeaderHeight == 0 ? 0 : mCurrentPos * 1f / mHeaderHeight;
-        return currentPercent;
+        return mHeaderHeight == 0 ? 0 : mCurrentPos * 1f / mHeaderHeight;
     }
 
     public boolean willOverTop(int to) {

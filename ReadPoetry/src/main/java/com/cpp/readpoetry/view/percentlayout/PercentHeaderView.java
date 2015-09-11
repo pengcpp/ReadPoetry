@@ -1,11 +1,11 @@
 package com.cpp.readpoetry.view.percentlayout;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -29,7 +29,6 @@ public class PercentHeaderView extends RelativeLayout {
     private Context context;
     LayoutInflater inflater;
 
-    private ImageView mQuoraImage;
     private RatingBar mRatingBar;
     private TextView mRiskText;
     private CountTextView mRateText;
@@ -69,7 +68,6 @@ public class PercentHeaderView extends RelativeLayout {
         inflater.inflate(layoutResId, this);
 
         mRatingBar = (RatingBar) findViewById(R.id.rating_bar);
-        mQuoraImage = (ImageView) findViewById(R.id.quora_image);
         mRiskText = (TextView) findViewById(R.id.risk_result_text);
         mRateText = (CountTextView) findViewById(R.id.rate_value_text);
 
@@ -388,12 +386,19 @@ public class PercentHeaderView extends RelativeLayout {
     }
 
     void performButtonClick() {
-        mQuoraImage.setOnClickListener(new OnClickListener() {
+        findViewById(R.id.quora_image).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (quoraImageClickListener != null) {
                     quoraImageClickListener.onQuoraImageClick(view);
                 }
+            }
+        });
+
+        findViewById(R.id.back_image).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Activity) context).finish();
             }
         });
     }

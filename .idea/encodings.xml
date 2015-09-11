@@ -37,9 +37,24 @@
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/percentlayout/PercentRelativeLayout.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/PtrClassicDefaultHeader.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/PtrClassicFrameLayout.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/PtrTensionIndicator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/header/RentalsSunDrawable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/view/ptrrefresh/header/RentalsSunHeaderView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_buildings.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_sky.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_sun.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-mdpi/rentals_buildings.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-mdpi/rentals_sky.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-mdpi/rentals_sun.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_quora.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_back.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_front.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/rentals_buildings.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/rentals_sky.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/rentals_sun.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xxhdpi/rentals_buildings.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xxhdpi/rentals_sky.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xxhdpi/rentals_sun.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable/quora_result_rating_bar.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_wrapper_notitle.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_divided_line.xml" charset="UTF-8" />

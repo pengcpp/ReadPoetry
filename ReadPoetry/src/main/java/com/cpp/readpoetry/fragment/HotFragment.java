@@ -64,12 +64,17 @@ public class HotFragment extends Fragment implements SwipeRefreshLayout.OnRefres
      */
     @Override
     public void onRefresh() {
-        handler.postDelayed(new Runnable() {
-            @Override
+        new Handler().postDelayed(new Runnable() {
             public void run() {
-                swipeLayout.setRefreshing(false);
+                getActivity().runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        swipeLayout.setRefreshing(false);
+                    }
+                });
             }
-        }, 2000);
+        }, 1500);
     }
 
     /**

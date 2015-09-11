@@ -128,6 +128,17 @@
         </LinearLayout>
 
         <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="center"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/image_des"
+                android:src="@drawable/icon_back_white"/>
+
+        <ImageView
                 android:id="@+id/quora_image"
                 android:layout_width="30dp"
                 android:layout_height="30dp"

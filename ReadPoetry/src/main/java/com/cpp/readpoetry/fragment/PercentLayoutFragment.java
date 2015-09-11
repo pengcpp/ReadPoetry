@@ -20,9 +20,6 @@ import com.nineoldandroids.animation.PropertyValuesHolder;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.cpp.readpoetry.config.GlobalConfig.REFRESH_FAIL;
-import static com.cpp.readpoetry.config.GlobalConfig.REFRESH_OK;
-
 /**
  * PercentLayout
  */
@@ -143,27 +140,18 @@ public class PercentLayoutFragment extends BaseFragment implements SwipeRefreshL
 
     @Override
     public void onRefresh() {
-        handler.postDelayed(new Runnable() {
-            @Override
+        new Handler().postDelayed(new Runnable() {
             public void run() {
-                swipeLayout.setRefreshing(false);
-                headerView.setPortfolioData(new PortfolioData());
-                itemAdapter.setItemDataList(portfolioData.fundList);
+                getActivity().runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        swipeLayout.setRefreshing(false);
+                        headerView.setPortfolioData(new PortfolioData());
+                        itemAdapter.setItemDataList(portfolioData.fundList);
+                    }
+                });
             }
-        }, 2000);
+        }, 1500);
     }
-
-
-    Handler handler = new Handler() {
-        public void handleMessage(android.os.Message msg) {
-            switch (msg.what) {
-                case REFRESH_OK:
-                    swipeLayout.setRefreshing(false);
-                    break;
-                case REFRESH_FAIL:
-                    break;
-                default:
-            }
-        }
-    };
 }

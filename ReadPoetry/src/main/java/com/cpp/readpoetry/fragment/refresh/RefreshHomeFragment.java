@@ -1,4 +1,4 @@
-package com.cpp.readpoetry.fragment;
+package com.cpp.readpoetry.fragment.refresh;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,15 +11,14 @@ import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.activity.TerminalActivity;
 import com.cpp.readpoetry.data.FuncItemData;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
-import com.cpp.readpoetry.fragment.refresh.RefreshHomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 乱七八糟的Function
+ * Refresh
  */
-public class FunctionFragment extends BaseFragment {
+public class RefreshHomeFragment extends BaseFragment {
 
     ListView mListView;
 
@@ -29,7 +28,7 @@ public class FunctionFragment extends BaseFragment {
 
     @Override
     protected int onSetContainerViewId() {
-        return R.layout.fragment_function_main;
+        return R.layout.fragment_refresh_main;
     }
 
     @Override
@@ -52,43 +51,31 @@ public class FunctionFragment extends BaseFragment {
 
         // PercentLayoutFragment
         data = new FuncItemData();
-        data.title = "PercentLayout";
+        data.title = "StoreHouse";
         data.showHeaderView = true;
         data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TerminalActivity.showFragment(context, PercentLayoutFragment.class, null);
+                TerminalActivity.showFragment(context, StoreHouseFragment.class, null);
             }
         };
         itemDataList.add(data);
 
         // CarouselFragment
         data = new FuncItemData();
-        data.title = "Carousel";
+        data.title = "RentalsStyle";
         data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TerminalActivity.showFragment(context, CarouselFragment.class, null);
+                TerminalActivity.showFragment(context, RentalsStyleFragment.class, null);
             }
         };
         itemDataList.add(data);
 
-        //Refresh
-        data = new FuncItemData();
-        data.title = "Refresh";
-        data.showDividingLine = false;
-        data.itemType = 1;
-        data.onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TerminalActivity.showFragment(context, RefreshHomeFragment.class, null);
-            }
-        };
-        itemDataList.add(data);
     }
 
     /**

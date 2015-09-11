@@ -25,7 +25,7 @@ public class PtrFrameLayout extends ViewGroup {
     public final static byte PTR_STATUS_COMPLETE = 4;
 
     private static final boolean DEBUG_LAYOUT = true;
-    public static boolean DEBUG = false;
+    public static boolean DEBUG = true;
     private static int ID = 1;
 
     // auto refresh status
