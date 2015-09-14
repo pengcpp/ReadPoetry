@@ -11,7 +11,10 @@ import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.activity.TerminalActivity;
 import com.cpp.readpoetry.data.FuncItemData;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
-import com.cpp.readpoetry.fragment.refresh.RefreshHomeFragment;
+import com.cpp.readpoetry.fragment.function.CarouselFragment;
+import com.cpp.readpoetry.fragment.function.ColorAnimFragment;
+import com.cpp.readpoetry.fragment.function.PercentLayoutFragment;
+import com.cpp.readpoetry.fragment.function.RefreshHomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,12 +83,25 @@ public class FunctionFragment extends BaseFragment {
         //Refresh
         data = new FuncItemData();
         data.title = "Refresh";
-        data.showDividingLine = false;
+        data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TerminalActivity.showFragment(context, RefreshHomeFragment.class, null);
+            }
+        };
+        itemDataList.add(data);
+
+        //ColorAnimFragment
+        data = new FuncItemData();
+        data.title = "ColorAnimFragment";
+        data.showDividingLine = false;
+        data.itemType = 1;
+        data.onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TerminalActivity.showFragment(context, ColorAnimFragment.class, null);
             }
         };
         itemDataList.add(data);

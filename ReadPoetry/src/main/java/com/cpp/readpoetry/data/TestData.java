@@ -34,6 +34,12 @@ public class TestData {
             Color.parseColor("#7569e2"), Color.parseColor("#854ea8"),
     };
 
+    public static final int[] ANIMATION_COLORS_7 = new int[]{
+            Color.parseColor("#06FF20"), Color.parseColor("#ABFF00"), Color.parseColor("#FFFD00"),
+            Color.parseColor("#FFDF00"), Color.parseColor("#FF9D06"), Color.parseColor("#FF7200"),
+            Color.parseColor("#FF1500")
+    };
+
     public static final float[] MAIN_TAB_FUND_PROPORTION = new float[]{
             30, 28, 22, 15, 5
     };

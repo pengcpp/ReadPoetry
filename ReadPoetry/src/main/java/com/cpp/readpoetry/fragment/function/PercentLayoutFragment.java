@@ -1,4 +1,4 @@
-package com.cpp.readpoetry.fragment;
+package com.cpp.readpoetry.fragment.function;
 
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.data.PortfolioData;
+import com.cpp.readpoetry.fragment.QuoraFragment;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
 import com.cpp.readpoetry.util.Methods;
 import com.cpp.readpoetry.view.CircleTextView;

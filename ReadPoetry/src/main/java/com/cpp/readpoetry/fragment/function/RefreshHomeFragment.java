@@ -1,4 +1,4 @@
-package com.cpp.readpoetry.fragment.refresh;
+package com.cpp.readpoetry.fragment.function;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +11,8 @@ import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.activity.TerminalActivity;
 import com.cpp.readpoetry.data.FuncItemData;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
+import com.cpp.readpoetry.fragment.refresh.RentalsStyleFragment;
+import com.cpp.readpoetry.fragment.refresh.StoreHouseFragment;
 
 import java.util.ArrayList;
 import java.util.List;
