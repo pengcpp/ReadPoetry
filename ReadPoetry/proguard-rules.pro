@@ -19,3 +19,6 @@
 -keep class com.renren.finance.android.view.CountTextView {
     *;
 }
+
+-keep class com.cpp.readpoetry.third.easing.** { *; }
+-keep interface com.cpp.readpoetry.third.easing.** { *; }

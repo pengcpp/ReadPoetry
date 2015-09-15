@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_white">
+
+    <com.cpp.readpoetry.view.TopActionBar
+            android:id="@+id/topbar"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:topbarIsLeftShow="true"
+            app:topbarTitle="Easing"/>
+
+    <com.cpp.readpoetry.view.DrawView
+            android:id="@+id/history"
+            android:layout_below="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="280dp"/>
+    <View
+            android:layout_alignLeft="@+id/history"
+            android:id="@+id/target"
+            android:layout_width="8dp"
+            android:layout_alignBottom="@+id/history"
+            android:layout_height="8dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/easing_circle"/>
+
+    <ListView
+            android:layout_marginTop="330dp"
+            android:id="@+id/easing_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>
