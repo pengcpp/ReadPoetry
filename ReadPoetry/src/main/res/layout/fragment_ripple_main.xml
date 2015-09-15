@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_white">
+
+    <com.cpp.readpoetry.view.TopActionBar
+            android:id="@+id/topbar"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:topbarIsLeftShow="true"
+            app:topbarTitle="Ripple"/>
+
+    <com.cpp.readpoetry.view.RippleBackground
+            android:id="@+id/content"
+            android:layout_below="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rb_color="#0099CC"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="6"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+
+        <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/centerImage"
+                android:src="@drawable/ripple_phone"/>
+
+    </com.cpp.readpoetry.view.RippleBackground>
+
+</RelativeLayout>

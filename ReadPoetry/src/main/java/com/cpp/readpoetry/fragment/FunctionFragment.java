@@ -106,12 +106,25 @@ public class FunctionFragment extends BaseFragment {
         //EasingFragment
         data = new FuncItemData();
         data.title = "Easing";
-        data.showDividingLine = false;
+        data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TerminalActivity.showFragment(context, EasingFragment.class, null);
+            }
+        };
+        itemDataList.add(data);
+
+        //RippleFragment
+        data = new FuncItemData();
+        data.title = "Ripple";
+        data.showDividingLine = false;
+        data.itemType = 1;
+        data.onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TerminalActivity.showFragment(context, RippleFragment.class, null);
             }
         };
         itemDataList.add(data);

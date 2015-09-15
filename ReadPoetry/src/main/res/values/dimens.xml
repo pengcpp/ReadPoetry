@@ -9,4 +9,7 @@
 
     <dimen name="default_circle_view_size">200dp</dimen>
 
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+
 </resources>
