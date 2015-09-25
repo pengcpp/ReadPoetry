@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.cpp.readpoetry.view.TopActionBar
+            android:id="@+id/topbar"
+            app:topbarTitle="CircleView"
+            app:topbarIsLeftShow="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topbar"
+            android:background="@color/common_white"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.cpp.readpoetry.view.CircleTextView
+                    android:id="@+id/circle_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/common_white"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Circle"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="CircleTextView"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.cpp.readpoetry.view.CircleBorderColorTextView
+                    android:id="@+id/circle_border_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/material_blue"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Circle"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="CircleBorderColorTextView"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/circle_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:contentDescription="@string/image_des"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="ImageView ResizeBitmapFromResource"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

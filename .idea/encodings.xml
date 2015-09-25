@@ -3,6 +3,15 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/TerminalActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/base/BaseFragmentActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/DarkActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/FabActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/FullScreenActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/ImageActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/MenuItemActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/NoHeaderActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/NormalActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/SampleActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/activity/sliding/TalonActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/PortfolioData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/QuoraData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/java/com/cpp/readpoetry/data/TestData.java" charset="UTF-8" />
@@ -43,6 +52,27 @@
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_buildings.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_sky.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-hdpi/rentals_sun.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/favorite_1_image.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/favorite_2_profile.jpeg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/follower_1.jpeg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/follower_2.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/follower_3.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/following_1.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/following_2.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/following_3.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/mention_1_image.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/mention_1_profile.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/mention_1_profile_2.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/mention_2_profile.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/mention_3_profile.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/profile_picture.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/tweet_1_image.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/tweet_1_profile.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-nodpi/twitter_profile.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/ic_add.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/ic_debug.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/ic_location.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/ic_message.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_quora.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_back.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/icon_risk_front.png" charset="UTF-8" />
@@ -50,11 +80,29 @@
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/rentals_sky.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable-xhdpi/rentals_sun.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/drawable/quora_result_rating_bar.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_content_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_favorite_1.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_favorite_2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_mention_1.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_mention_2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_mention_3.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_menuitem_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_sample_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_talon_favorites_card.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_talon_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_talon_mentions_card.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_talon_stats_card.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_talon_tweets_card.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_tweet_1.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_tweet_2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_sliding_tweet_3.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/activity_wrapper_notitle.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_divided_line.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_textview.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/grid_password_view.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/layout/percent_header_layout.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/menu/activity_menu_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/menu/activity_talon.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadPoetry/src/main/res/values/ids.xml" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

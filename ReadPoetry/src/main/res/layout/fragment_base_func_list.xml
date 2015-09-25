@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/common_white">
+                android:layout_height="match_parent">
 
     <com.cpp.readpoetry.view.TopActionBar
             android:id="@+id/topbar"
@@ -11,13 +10,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:topbarIsLeftShow="true"
-            app:topbarTitle="Refresh"/>
+            app:topbarTitle="FunctionList"/>
 
     <ListView
             android:id="@+id/list_view"
             android:layout_below="@+id/topbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/common_gray_bg"
             android:scrollbars="none"
             android:divider="@null"/>
 

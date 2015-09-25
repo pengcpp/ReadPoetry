@@ -1,4 +1,4 @@
-package com.cpp.readpoetry.fragment.function;
+package com.cpp.readpoetry.fragment.guide;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

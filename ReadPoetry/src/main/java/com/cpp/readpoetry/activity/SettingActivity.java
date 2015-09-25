@@ -7,7 +7,6 @@ import android.view.View;
 import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.manager.AnimationManager;
 
-
 /**
  * Created by Three. on 2015/3/6.
  */

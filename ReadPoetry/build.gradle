@@ -41,5 +41,7 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
 
     compile 'it.neokree:MaterialNavigationDrawer:1.3.2'
+
+    compile 'com.klinkerapps:sliding-activity:1.1.1'
 }
 //apply plugin: 'maven'

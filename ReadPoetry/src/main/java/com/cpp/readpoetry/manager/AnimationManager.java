@@ -45,12 +45,9 @@ public class AnimationManager {
 
         logInfo(TAG, "activity: " + activity.getClass().getName() + " Action: " + activityAction.name() + " Type: " + animationType.name());
 
-        if (activity != null) {
-
-            int[] animationResIds = getAnimationResId(activityAction, animationType);
-            if (animationResIds != null && animationResIds.length == 2) {
-                activity.overridePendingTransition(animationResIds[0], animationResIds[1]);
-            }
+        int[] animationResIds = getAnimationResId(activityAction, animationType);
+        if (animationResIds != null && animationResIds.length == 2) {
+            activity.overridePendingTransition(animationResIds[0], animationResIds[1]);
         }
     }
 

@@ -14,7 +14,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.fragment.FeedBackFragment;
-import com.cpp.readpoetry.fragment.FeedFragment;
+import com.cpp.readpoetry.fragment.ViewFragment;
 import com.cpp.readpoetry.fragment.FunctionFragment;
 import com.cpp.readpoetry.fragment.HotFragment;
 import com.cpp.readpoetry.util.DisplayUtil;
@@ -71,7 +71,7 @@ public class MainActivity extends MaterialNavigationDrawer {
 //        this.addSection(newSection("反馈意见",new FragmentIndex()));
         this.addSection(newSection(getString(R.string.drawer_section1), R.drawable.ic_track_changes_white, new HotFragment()).setSectionColor(Color.parseColor("#F44336")));
         this.addSection(newSection(getString(R.string.drawer_section2), R.drawable.ic_backup_white, new FeedBackFragment()).setSectionColor(Color.parseColor("#2196F3")));
-        this.addSection(newSection(getString(R.string.drawer_section3), R.drawable.ic_camera_alt, new FeedFragment()).setSectionColor(Color.parseColor("#5AB963")));
+        this.addSection(newSection(getString(R.string.drawer_section3), R.drawable.ic_camera_alt, new ViewFragment()).setSectionColor(Color.parseColor("#5AB963")));
         this.addSection(newSection(getString(R.string.drawer_section4), R.drawable.ic_settings_white, new FunctionFragment()).setSectionColor(Color.parseColor("#FF9800")));
 //        this.addSection(newSection(getString(R.string.drawer_section4), R.drawable.ic_search_white, new Intent(MainActivity.this, SettingActivity.class)));
 

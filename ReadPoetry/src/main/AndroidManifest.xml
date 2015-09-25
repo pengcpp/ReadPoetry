@@ -29,6 +29,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
 
         <!-- MainActivity -->
@@ -56,6 +57,55 @@
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
         </activity>
+
+        <!-- Sliding Activity-->
+        <activity android:name=".activity.sliding.SampleActivity">
+
+        </activity>
+
+        <activity
+                android:name=".activity.sliding.NormalActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding.Light"/>
+
+        <activity
+                android:name=".activity.sliding.FullScreenActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding.Light"/>
+
+        <activity
+                android:name=".activity.sliding.MenuItemActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding.Light"
+                android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+                android:name=".activity.sliding.ImageActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding.Light"/>
+
+        <activity
+                android:name=".activity.sliding.DarkActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding"/>
+
+        <activity
+                android:name=".activity.sliding.FabActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding.Light"/>
+
+        <activity
+                android:name=".activity.sliding.NoHeaderActivity"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:theme="@style/Theme.Sliding"/>
+
     </application>
 
 </manifest>

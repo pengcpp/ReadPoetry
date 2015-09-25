@@ -1,5 +1,6 @@
 package com.cpp.readpoetry.fragment;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.cpp.readpoetry.R;
 import com.cpp.readpoetry.activity.TerminalActivity;
+import com.cpp.readpoetry.activity.sliding.SampleActivity;
 import com.cpp.readpoetry.data.FuncItemData;
 import com.cpp.readpoetry.fragment.base.BaseFragment;
 import com.cpp.readpoetry.fragment.function.*;
@@ -90,15 +92,15 @@ public class FunctionFragment extends BaseFragment {
         };
         itemDataList.add(data);
 
-        //ColorAnimFragment
+        //Guide
         data = new FuncItemData();
-        data.title = "ColorAnimFragment";
+        data.title = "Guide";
         data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TerminalActivity.showFragment(context, ColorAnimFragment.class, null);
+                TerminalActivity.showFragment(context, GuideHomeFragment.class, null);
             }
         };
         itemDataList.add(data);
@@ -132,12 +134,25 @@ public class FunctionFragment extends BaseFragment {
         //GlassViewFragment
         data = new FuncItemData();
         data.title = "GlassView";
-        data.showDividingLine = false;
+        data.showDividingLine = true;
         data.itemType = 1;
         data.onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TerminalActivity.showFragment(context, GlassViewFragment.class, null);
+            }
+        };
+        itemDataList.add(data);
+
+        //SampleActivity
+        data = new FuncItemData();
+        data.title = "SampleActivity";
+        data.showDividingLine = false;
+        data.itemType = 1;
+        data.onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SampleActivity.class));
             }
         };
         itemDataList.add(data);
