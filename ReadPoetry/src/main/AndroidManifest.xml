@@ -42,7 +42,7 @@
 
         <activity android:name=".activity.SettingActivity"
                   android:theme="@style/ActivityAnimationIn"/>
-        
+
         <activity android:name=".activity.Profile"/>
 
         <activity android:name=".activity.LoginActivity"

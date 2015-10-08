@@ -42,8 +42,8 @@ public class FabActivity extends SlidingActivity {
         );
         setContent(R.layout.activity_sliding_content_main);
         setFab(
-                getResources().getColor(R.color.fab_activity_accent),
-                R.drawable.ic_debug,
+                getResources().getColor(R.color.dark_activity_primary),
+                R.drawable.ic_track_changes_white,
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

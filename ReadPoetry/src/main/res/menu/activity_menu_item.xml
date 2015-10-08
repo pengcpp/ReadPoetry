@@ -20,7 +20,7 @@
 
     <item android:title="@string/bug"
         android:id="@+id/menu_bug"
-        android:icon="@drawable/ic_debug"
+        android:icon="@drawable/ic_track_changes_white"
         app:showAsAction="ifRoom"/>
 
 </menu>

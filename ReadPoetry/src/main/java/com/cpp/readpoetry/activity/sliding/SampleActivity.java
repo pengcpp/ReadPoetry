@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.CheckBox;
 import com.cpp.readpoetry.R;
 
@@ -33,7 +34,9 @@ public class SampleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getDelegate().requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_sliding_sample_main);
 
         findViewById(R.id.show_normal).setOnClickListener(new View.OnClickListener() {

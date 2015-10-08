@@ -16,7 +16,7 @@
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/image_des"
-                    android:src="@drawable/lolipop_bg"/>
+                    android:src="@drawable/login_background"/>
         </FrameLayout>
     </ScrollView>
 
