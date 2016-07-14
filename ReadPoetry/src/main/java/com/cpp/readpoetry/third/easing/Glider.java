@@ -30,7 +30,7 @@ import com.nineoldandroids.animation.ValueAnimator;
 public class Glider {
 
     public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator){
-        return Glider.glide(skill,duration,animator,null);
+        return Glider.glide(skill,duration,animator, new BaseEasingMethod.EasingListener[0]);
     }
 
     public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator, BaseEasingMethod.EasingListener ... listeners){
